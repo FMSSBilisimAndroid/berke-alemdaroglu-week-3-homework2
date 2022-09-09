@@ -1,5 +1,5 @@
 # Android Nested Graph Back Stack
-## Week 3 - Homework 1 -> [Week 3 Homework 2 Link.](https://github.com/FMSSBilisimAndroid/berke-alemdaroglu-week-3-homework1)
+## Week 3 - Homework 1 -> [Week 3 Homework 1 Link.](https://github.com/FMSSBilisimAndroid/berke-alemdaroglu-week-3-homework1)
 ## Week 3 - Homework 2 
 
 <h2 align="center">Hi 👋, I'm Ersin Berke Alemdaroğlu</h2>
