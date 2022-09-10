@@ -10,4 +10,6 @@
     <color name="bottom_menu_background_color">#56669D</color>
     <color name="bottom_menu_ripple_color">#FA9490</color>
     <color name="home_fragment_background_color">#56669D</color>
+    <color name="get_started_button_stroke">#404756</color>
+    <color name="get_started_login_background">#E9EFFF</color>
 </resources>

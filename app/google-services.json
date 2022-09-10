@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "558819696342",
+    "project_id": "kotlinhomework3",
+    "storage_bucket": "kotlinhomework3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558819696342:android:c8662083fd02d8c7a57377",
+        "android_client_info": {
+          "package_name": "com.ersinberkealemdaroglu.week_3_homework_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558819696342-q00d72okjjhos0t7k01ou6a08n8e993r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgM9FkB0XT50L1k5BLMR9RmaF62Wf4abo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558819696342-q00d72okjjhos0t7k01ou6a08n8e993r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -18,5 +18,6 @@
     <string name="complete_the_coueses_you_started">Complete the coueses you started</string>
     <string name="timed_meditation">Timed meditation</string>
     <string name="self_practice_in_silence">Self-practice in silence</string>
+    <string name="logout">LOGOUT</string>
 
 </resources>
