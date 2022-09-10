@@ -15,6 +15,7 @@ class HomeFragment : Fragment() {
     ): View {
         homeBinding = FragmentHomeBinding.inflate(inflater)
         return homeBinding.root
+
     }
 
 }

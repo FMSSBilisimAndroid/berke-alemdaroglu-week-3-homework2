@@ -11,5 +11,12 @@
     <string name="get_started_with_app_where_you_n_can_find_some_peace">Get started with app where you \n can find some peace</string>
     <string name="to_nosleep">To NoSleep</string>
     <string name="hi_welcome">Hi, Welcome</string>
+    <string name="get_started_login_text">JOIN WITH EMAIL</string>
+    <string name="want_to_join_us">Want to Join Us?</string>
+    <string name="info_get_started_text">2165 Person Meditating Right Now!</string>
+    <string name="recent">Recent</string>
+    <string name="complete_the_coueses_you_started">Complete the coueses you started</string>
+    <string name="timed_meditation">Timed meditation</string>
+    <string name="self_practice_in_silence">Self-practice in silence</string>
 
 </resources>

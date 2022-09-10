@@ -7,30 +7,29 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.ersinberkealemdaroglu.week_3_homework_2.R
-import com.ersinberkealemdaroglu.week_3_homework_2.databinding.FragmentLoginBinding
+import com.ersinberkealemdaroglu.week_3_homework_2.databinding.FragmentGetStartedLoginBinding
 
-class LoginFragment : Fragment() {
-    private lateinit var loginBinding: FragmentLoginBinding
-
+class GetStartedLoginFragment : Fragment() {
+    private lateinit var getStartedLoginBinding: FragmentGetStartedLoginBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-        loginBinding = FragmentLoginBinding.inflate(inflater)
-        return loginBinding.root
+        getStartedLoginBinding = FragmentGetStartedLoginBinding.inflate(inflater)
+        return getStartedLoginBinding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        loginButtonOnClick()
-
+        getStartedLoginButtonClick()
     }
 
-    private fun loginButtonOnClick() {
-        loginBinding.button2.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_home_graph)
+    private fun getStartedLoginButtonClick() {
+        getStartedLoginBinding.buttonGetStarteds.setOnClickListener {
+            findNavController().navigate(R.id.action_getStartedLoginFragment_to_loginFragment)
         }
-
     }
+
 }

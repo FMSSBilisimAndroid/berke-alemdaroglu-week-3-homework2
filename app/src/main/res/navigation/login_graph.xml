@@ -11,8 +11,8 @@
         android:label="fragment_get_started"
         tools:layout="@layout/fragment_get_started" >
         <action
-            android:id="@+id/action_getStartedFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/action_getStartedFragment_to_getStartedLoginFragment"
+            app:destination="@id/getStartedLoginFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -24,7 +24,10 @@
             app:destination="@id/signUpFragment" />
         <action
             android:id="@+id/action_loginFragment_to_home_graph"
-            app:destination="@id/home_graph" />
+            app:destination="@id/home_graph"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true"
+          />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -36,4 +39,12 @@
             app:destination="@id/home_graph" />
     </fragment>
     <include app:graph="@navigation/home_graph" />
+    <fragment
+        android:id="@+id/getStartedLoginFragment"
+        android:name="com.ersinberkealemdaroglu.week_3_homework_2.ui.GetStartedLoginFragment"
+        android:label="GetStartedLoginFragment" >
+        <action
+            android:id="@+id/action_getStartedLoginFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
