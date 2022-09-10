@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Week-3-Homework-2</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="image_content">Image Content</string>
+    <string name="get_started">Get Started</string>
+    <string name="get_started_with_app_where_you_n_can_find_some_peace">Get started with app where you \n can find some peace</string>
+    <string name="to_nosleep">To NoSleep</string>
+    <string name="hi_welcome">Hi, Welcome</string>
+
 </resources>
