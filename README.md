@@ -22,3 +22,17 @@
 <!--Most Used Languages-->
 <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=berkealemdaroglu&layout=compact&hide=html,css" alt="My Top Langs" />
 
+## Uygulama Hakkında
+#### Tek main aktivitide birden fazla açılan nav_graphlar birbirine bağlanmıştır. Bağlantı sonucu oluşan backstacklerin ortadan kaldırılması ve kullanıcıların tekrar gitmemesi gereken sayfaların engellenmiştir. 
+
+### Login ve SignUp ekranlarında Kullanılan Teknoloji [Firebase](https://firebase.google.com/).
+
+# Uygulama içi Ekran Kayıtları
+
+## Firebase ile kullanıcı kayıt işlemi.
+https://user-images.githubusercontent.com/50260160/189531216-5671c97b-15cd-4fa5-b880-e0e31ac5a481.mp4
+
+## Firebase ile kullanıcı giriş işlemi.
+https://user-images.githubusercontent.com/50260160/189531259-3404aed2-8a66-4fea-82b3-bd935141f106.mp4
+
+
