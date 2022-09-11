@@ -9,10 +9,10 @@
         android:id="@+id/getStartedFragment"
         android:name="com.ersinberkealemdaroglu.week_3_homework_2.ui.GetStartedFragment"
         android:label="fragment_get_started"
-        tools:layout="@layout/fragment_get_started" >
+        tools:layout="@layout/fragment_get_started">
         <action
             android:id="@+id/action_getStartedFragment_to_getStartedLoginFragment"
-            app:destination="@id/getStartedLoginFragment" />
+            app:destination="@id/getStartedLoginFragment"/>
         <action
             android:id="@+id/action_getStartedFragment_to_home_graph"
             app:destination="@id/home_graph"

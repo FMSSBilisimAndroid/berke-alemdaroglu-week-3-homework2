@@ -11,6 +11,7 @@ import com.ersinberkealemdaroglu.week_3_homework_2.databinding.FragmentGetStarte
 
 class GetStartedLoginFragment : Fragment() {
     private lateinit var getStartedLoginBinding: FragmentGetStartedLoginBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,

@@ -1,12 +1,12 @@
 package com.ersinberkealemdaroglu.week_3_homework_2.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.ersinberkealemdaroglu.week_3_homework_2.R
+import com.ersinberkealemdaroglu.week_3_homework_2.MainActivity
 import com.ersinberkealemdaroglu.week_3_homework_2.databinding.FragmentHomeBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -37,9 +37,18 @@ class HomeFragment : Fragment() {
         userLogoutButtonClicked()
     }
 
-   private fun userLogoutButtonClicked(){
+    /**
+     * Logout işlemleri ve getStartedFragment e geri yönlendirme işlemi.
+     */
+    private fun userLogoutButtonClicked() {
         homeBinding.logoutButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_loginFragment2)
+            val intent = Intent(context, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            activity?.startActivity(intent)
+
+            // Firebase logout method.
             auth.signOut()
         }
 

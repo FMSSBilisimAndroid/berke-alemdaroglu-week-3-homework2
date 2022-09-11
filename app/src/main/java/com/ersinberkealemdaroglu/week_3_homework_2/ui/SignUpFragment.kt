@@ -1,9 +1,6 @@
 package com.ersinberkealemdaroglu.week_3_homework_2.ui
 
-import android.content.ContentValues.TAG
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -40,6 +37,11 @@ class SignUpFragment : Fragment() {
         signUpButtonClick()
     }
 
+    /**
+     *  İlk etapta Edittexlerin boş olup olmadığı kontrol ediliyor.
+     *  Daha önce girilen mail adresi ile kayıt var mı kontrol ediliyor.
+     *  Herşey uygunsa Firabase database e kayıt yapılarak HomeFragment a yönlendiliyor.
+     */
     private fun signUpButtonClick() {
         signUpBinding.signUpButton.setOnClickListener {
             val email = signUpBinding.editTextTextEmailAddress.text.toString()
@@ -51,18 +53,16 @@ class SignUpFragment : Fragment() {
                 auth.createUserWithEmailAndPassword(email, password).addOnSuccessListener {
                     findNavController().navigate(R.id.action_signUpFragment_to_home_graph)
                 }.addOnFailureListener {
-                    if(password.length != 6){
-                        Toast.makeText(context, "Lütfen 6 Karakterden Uzun Bir Şifre Girin!", Toast.LENGTH_SHORT).show()
-                    }else{
-                        Toast.makeText(context, "This Email Address Already Exists",
+                   if(password.length <= 6){
+                        Toast.makeText(context, "Lütfen 6 Karakterden Uzun Şifre Girin!",
                             Toast.LENGTH_SHORT).show()
-                    }
+                    }else{
+                       Toast.makeText(context, "This Email Address Already Exists",
+                           Toast.LENGTH_SHORT).show()
+                   }
                 }
             }
-
-
         }
-
     }
 
 }

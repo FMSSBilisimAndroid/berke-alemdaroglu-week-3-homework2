@@ -38,6 +38,10 @@ class LoginFragment : Fragment() {
         signUpButtonClick()
     }
 
+    /**
+     * auth.signInWithEmailAndPassword ile Firebase de bulunan kullanıcıların email ve şifrelerini kontrol ediyor.
+     * Eğer bilgiler uyuşuyorsa giriş yaparak homeFragment a yönlendiliyor.
+     */
     private fun loginButtonOnClick() {
         loginBinding.loginButton.setOnClickListener {
             val emailText = loginBinding.editTextTextEmailAddress.text.toString()
@@ -52,13 +56,10 @@ class LoginFragment : Fragment() {
                     Toast.makeText(context, "Girilen Bilgiler Yanlıştır!", Toast.LENGTH_SHORT).show()
                 }
             }
-
-
-
-
         }
     }
 
+    // Kullanıcıların kayıt yapabilesmi için signUpFragment a yönlendiliyor.
     private fun signUpButtonClick(){
         loginBinding.signUpButton.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_signUpFragment)

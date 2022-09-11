@@ -35,26 +35,26 @@ class GetStartedFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        getStartedButtonClick()
         isLoginControllerAuth()
+        getStartedButtonClick()
     }
 
     private fun getStartedButtonClick() {
+        // buttonGetStarted ile getStartedLoginFragment a yönlendiriyor.
         getStartedBinding.buttonGetStarted.setOnClickListener {
             findNavController().navigate(R.id.action_getStartedFragment_to_getStartedLoginFragment)
         }
     }
 
-    private fun isLoginControllerAuth(){
+    /**
+     * Kullanıcı giriş kontrolü. Eğer kullanıcı giriş yapmışsa homeFragment a direkt yönlendiriliyor.
+     */
+    private fun isLoginControllerAuth() {
         val currentUser = auth.currentUser
-
-        if (currentUser != null){
-            findNavController().navigate(R.id.action_getStartedFragment_to_home_graph)
-        }else{
-            Toast.makeText(context, "Kullanıcı Giriş Yapmamış!", Toast.LENGTH_SHORT).show()
+        when {
+            currentUser != null -> findNavController().navigate(R.id.action_getStartedFragment_to_home_graph)
+            else -> Toast.makeText(context, "Welcome Back!", Toast.LENGTH_SHORT).show()
         }
-
-
     }
 
 }
