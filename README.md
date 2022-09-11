@@ -30,9 +30,11 @@
 # Uygulama içi Ekran Kayıtları
 
 ## Firebase ile kullanıcı kayıt işlemi.
-https://user-images.githubusercontent.com/50260160/189531216-5671c97b-15cd-4fa5-b880-e0e31ac5a481.mp4
+https://user-images.githubusercontent.com/50260160/189531498-65e3d559-da5b-47ce-904c-a34df15b058f.mp4
 
 ## Firebase ile kullanıcı giriş işlemi.
-https://user-images.githubusercontent.com/50260160/189531259-3404aed2-8a66-4fea-82b3-bd935141f106.mp4
+https://user-images.githubusercontent.com/50260160/189531504-5ae15688-28c4-4766-ac5c-82210370c17a.mp4
+
+
 
 
